@@ -1,3 +1,28 @@
 h1 {
 	color: purple;
 }
+
+h3 {
+	margin: auto;
+	padding-bottom: 20px;
+
+}
+
+.input-field {
+	background-color: pink;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	border-radius: 20px;
+	height: 200px;
+}
+
+.event-input {
+	background-color: #CCFFFF;
+	width: 60%;
+	margin: auto;
+	border-radius: 20px;
+	text-align: center;
+	padding: 20px;
+
+}
