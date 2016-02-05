@@ -1,7 +1,7 @@
 'use strict';
 
 function Request() {
-  this.url = 'http://splitter-sbox.herokuapp.com';
+  this.url = 'http://splitter-sbox.herokuapp.com/events';
 
   this.post = function(data, cb) {
     createRequest('POST', this.url, data, cb);
