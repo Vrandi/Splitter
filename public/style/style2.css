@@ -1,0 +1,126 @@
+html {
+  background: url("img/wallhaven.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Signika', sans-serif;
+  margin: 0;
+}
+
+header {
+  margin: 0 auto 30px;
+  background: linear-gradient(to top, #469B0A, #BDDA45);
+  background-color: #469B0A;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: space-between;;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  margin:0;
+  padding: 15px;
+  color: white;
+  text-shadow: 2px 8px 8px rgba(0, 0, 0, 0.45);
+}
+
+.sidebar {
+  margin-top: 25px;
+}
+
+#header-button {
+  margin: 20px;
+  margin-right: 40px;
+
+}
+
+.input-group {
+  /*padding-bottom: 10px;*/
+  padding-top: 25px;
+}
+
+.styled {
+  background-image: linear-gradient(to top, #469B0A, #BDDA45);
+}
+
+.separate {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-container {
+  /*background-color: white;
+  border: 5px solid grey;*/
+  margin-top: 35px;
+}
+
+
+.chart-container {
+  height: 300px;
+  /*margin: 10px;*/
+  padding: 10px;
+}
+
+.progress-container {
+  height: 400px;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 65px;
+}
+
+.progressbar-text {
+  font-size: 24px;
+}
+
+.meals-container {
+  text-align: center;
+}
+
+#item-element {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.list-item:hover {
+  background-color: rgba(92, 187, 25, 0.45);
+}
+
+.activated {
+color: black;
+animation: pulse;
+animation-duration: 1s;
+animation-timing-function: ease-out;
+animation-delay: 0;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-fill-mode: none;
+animation-play-state: running;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(92, 187, 25, 0.45);
+    box-shadow: 12px 0 15px -4px rgba(92, 187, 25, 0.45), -12px 0 8px -4px rgba(92, 187, 25, 0.45);
+  }
+  100% {
+    background-color: #FF4136;
+    box-shadow: 12px 0 15px -4px #FF4136, -12px 0 8px -4px #FF4136;
+  }
+}
+
+
+th {
+  text-align: center;
+  color: #BDDA45;
+}
+
+tr {
+  font-size: 28px;
+  color: white;
+
+}
