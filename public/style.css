@@ -11,7 +11,7 @@ h3 {
 .input-field {
 	background-color: pink;
 	text-align: center;
-	margin-left: 0;
+	margin: auto;
 	border-radius: 20px;
 	height: 200px;
 }
