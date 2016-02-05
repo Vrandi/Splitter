@@ -18,6 +18,13 @@ app.get('/events', function (req, res) {
   });
 });
 
+app.get('/events/:id', function (req, res) {
+  events.getOne(req.params.id, function(err, result) {
+    if (err) throw err;
+    res.json(result.rows);
+  });
+});
+
 app.post('/events', function (req, res) {
   events.add(req.body, function(err, result) {
     if (err) throw err;
@@ -31,8 +38,6 @@ app.delete('/events/:id', function (req, res) {
     res.json(result.rows);
   });
 });
-
-
 
 
 

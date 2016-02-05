@@ -17,6 +17,13 @@ function addEntry(params, callback) {
     callback);
 }
 
+function getOneEntry(id, callback) {
+  sendQuery(sql`
+    SELECT * FROM event WHERE event_id = ${id}
+    RETURNING event_id, event_name, total_cost, members, date`,
+    callback);
+}
+
 function removeEntry(id, callback) {
   sendQuery(sql`
     DELETE FROM event WHERE event_id = ${id}
@@ -38,7 +45,8 @@ function sendQuery(query, callback) {
 }
 
 module.exports = {
-  add: addEntry,
-  remove: removeEntry,
-  all: getAll
+  add       : addEntry,
+  remove    : removeEntry,
+  all       : getAll,
+  getOne    : getOneEntry
 };
