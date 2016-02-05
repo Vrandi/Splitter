@@ -1,6 +1,8 @@
 'use strict';
 
 function View() {
+  var _this = this;
+
   this.listOfEvents = document.querySelector('.events');
 
   this.listEvents = function(response) {
