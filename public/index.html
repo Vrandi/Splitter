@@ -12,7 +12,7 @@
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="/style/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,111 +27,97 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     	<div class="navbar-header">
       	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Event</a>
 
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">People</a>
 
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Expensis</a>
+      <a class="navbar-brand" href="#">History</a>
     </div>
-
+     <h1>Cool splitter</h1>
 	</nav>
-
-    <h1>Cool splitter</h1>
-<div style="display:" class="containe con-box">
-  <!-- <div class="row-1"> -->
-    <div class="input-field col-md-4">
-      <h3>Create a new event 1</h3>
-      <div class="event-input">
-        <div>
-          <h3>Event name</h3>
-        </div>
-        <div>
-          <div class="event-name-input input-group">
-            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
-            <input type="text" class="form-control add-event" placeholder=" Event Name" aria-describedby="basic-addon1">
+  <div class="container">
+    <!-- <div class="row-1"> -->
+      <div class="input-field col-md-4">
+        <h3>Create a new event 1</h3>
+        <div class="event-input">
+          <div>
+            <h3>Event name</h3>
           </div>
-          <div class="add-participants-input">
-            <div class="">
-              <p>You</p>
+          <div>
+            <div class="event-name-input input-group">
+              <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
+              <input type="text" class="form-control add-event" placeholder=" Event Name" aria-describedby="basic-addon1">
             </div>
-            <input type="text" class="form-control add-member" placeholder=" Name" aria-describedby="basic-addon1">
+            <div class="add-participants-input">
+              <div class="">
+                <p>You</p>
+              </div>
+              <input type="text" class="form-control add-member" placeholder=" Name" aria-describedby="basic-addon1">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-8">
-      <div class="event-container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Event</th>
-              <th>Number of members</th>
-              <th>Total cost</th>
-              <th>Date Time</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="events"></tbody>
-        </table>
-      </div>
-    </div>
-
-  <!-- </div> -->
-</div>
-<div style="display: " id="ropi" class="containe">
-  <!-- <div class="row-1"> -->
-    <div class="input-field col-md-4">
-      <h2>Create a new event 2</h2>
-      <div class="event-input">
-        <div>
-          <h3>Event name</h3>
+      <div class="col-md-8">
+        <div class="event-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Number of members</th>
+                <th>Total cost</th>
+                <th>Date Time</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="events"></tbody>
+          </table>
         </div>
-        <div>
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
-            <input type="text" class="form-control addMeal" placeholder="+ event" aria-describedby="basic-addon1">
+      </div>
+
+    <!-- </div> -->
+  </div>
+  <div style="display: " class="container">
+    <!-- <div class="row-1"> -->
+      <div class="input-field col-md-4">
+        <h2>Create a new event 2</h2>
+        <div class="event-input">
+          <div>
+            <h3>Event name</h3>
+          </div>
+          <div>
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
+              <input type="text" class="form-control add-event" placeholder="+ event" aria-describedby="basic-addon1">
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-8">
-      <div class="event-container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Event</th>
-              <th>Number of members</th>
-              <th>Total cost</th>
-              <th>Date Time</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody class="events"></tbody>
-        </table>
+      <div class="col-md-8">
+        <div class="event-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Number of members</th>
+                <th>Total cost</th>
+                <th>Date Time</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="events"></tbody>
+          </table>
+        </div>
       </div>
-    </div>
 
-  <!-- </div> -->
-</div>
+    <!-- </div> -->
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
