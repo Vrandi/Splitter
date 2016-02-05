@@ -10,6 +10,9 @@ var app = express();
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+app.listen(port, function() {
+  console.log('Listening on port ' + port + '...');
+});
 
 app.get('/events', function (req, res) {
   events.all(function(err, result) {
@@ -41,31 +44,3 @@ app.delete('/events/:id', function (req, res) {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(port, function() {
-  console.log('Listening on port ' + port + '...');
-});
