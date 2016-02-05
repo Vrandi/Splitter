@@ -21,6 +21,8 @@ app.get('/events', function (req, res) {
 app.get('/events/:id', function (req, res) {
   events.getOne(req.params.id, function(err, result) {
     // if (err) throw err;
+    console.log(result);
+    console.log(result.rows);
     res.json(result.rows);
   });
 });
