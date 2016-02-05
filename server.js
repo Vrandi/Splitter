@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.get('/events', function (req, res) {
   events.all(function(err, result) {
-    if (err) throw err;
+    // if (err) throw err;
     res.json(result.rows);
   });
 });
