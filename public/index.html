@@ -58,24 +58,25 @@
 	</nav>
 
     <h1>Cool splitter</h1>
-<div class="col-md-12">
-	<div class="input-field col-md-4 empty">
-		<h2>Create a new event</h2>
-		<div class="event-input">
-      <div>
-			   <h3>Event name</h3>
-      </div>
-      <div>
-  			<div class="input-group">
-          <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
-          <input type="text" class="form-control addMeal" placeholder="+ event" aria-describedby="basic-addon1">
+<div class="container">
+  <!-- <div class="row-1"> -->
+    <div class="input-field col-md-4">
+      <h2>Create a new event</h2>
+      <div class="event-input">
+        <div>
+          <h3>Event name</h3>
         </div>
+        <div>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-star"></span></span>
+            <input type="text" class="form-control addMeal" placeholder="+ event" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
     </div>
-		</div>
-  </div>
 
-	<div class="col-md-8 empty">
-    <div class="event-container">
+    <div class="col-md-8">
+      <div class="event-container">
         <table class="table">
           <thead>
             <tr>
@@ -88,11 +89,10 @@
           </thead>
           <tbody class="events"></tbody>
         </table>
-
-
+      </div>
     </div>
 
-  </div>
+  <!-- </div> -->
 </div>
 
 
@@ -101,7 +101,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
+
     <script src="requests.js"></script>
     <script src="httpservice.js"></script>
   </body>
