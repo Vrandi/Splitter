@@ -3,7 +3,7 @@
 function App() {
   this.request = new Request();
   this.view = new View();
-  this.controller = new Controller(request, view);
+  this.controller = new Controller(this.request, this.view);
 }
 
 var app = new App();
