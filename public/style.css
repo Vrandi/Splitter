@@ -5,15 +5,22 @@ h1 {
 h3 {
 	margin: auto;
 	padding-bottom: 20px;
+}
 
+.container {
+	margin-top: 35px;
+}
+
+#ropi {
+	margin-top: 45px;
 }
 
 .input-field {
 	background-color: pink;
 	text-align: center;
-	margin: auto;
 	border-radius: 20px;
 	height: 200px;
+	margin-top: 25px;
 }
 
 .event-input {
