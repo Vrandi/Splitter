@@ -6,7 +6,22 @@ var pg = require('pg');
 var databaseUrl = process.env.DATABASE_URL;
 
 function getAll(cb) {
-    sendQuery('SELECT * FROM event', cb);
+  sendQuery('SELECT * FROM event', cb);
+}
+
+function addEntry(params, callback) {
+  sendQuery(sql`
+    INSERT INTO event (total_cost, event_name, members, date)
+    VALUES (${params.cost}, ${params.name}, ${params.members}, ${params.date})
+    RETURNING event_id, event_name, total_cost, members, date`,
+    callback);
+}
+
+function removeEntry(id, callback) {
+  sendQuery(sql`
+    DELETE FROM event WHERE event_id = ${id}
+    RETURNING event_id, event_name, total_cost, members, date`,
+    callback);
 }
 
 
@@ -19,13 +34,8 @@ function sendQuery(query, callback) {
   });
 }
 
-
-
-
-
 module.exports = {
-  // add: addEntry,
-  // remove: removeEntry,
-  all: getAll,
-  // filter: filterEntriesByDate
+  add: addEntry,
+  remove: removeEntry,
+  all: getAll
 };
