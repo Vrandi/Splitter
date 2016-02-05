@@ -12,7 +12,7 @@ function getAll(cb) {
 function addEntry(params, callback) {
   sendQuery(sql`
     INSERT INTO event (total_cost, event_name, members, date)
-    VALUES (${params.cost}, ${params.name}, ${params.members}, ${params.date})
+    VALUES (${params.event_cost}, ${params.event_namename}, ${params.members}, ${params.date})
     RETURNING event_id, event_name, total_cost, members, date`,
     callback);
 }
