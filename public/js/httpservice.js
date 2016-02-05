@@ -8,6 +8,7 @@ function createRequest(method, url, data, callback) {
   req.onreadystatechange = function() {
     if (req.readyState === 4) {
       if (req.response !== '') {
+        console.log(req.response);
         var res = JSON.parse(req.response);
         callback(res);
       } else {
