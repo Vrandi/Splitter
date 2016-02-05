@@ -1,5 +1,5 @@
 h1 {
-	color: purple;
+	color: white;
 }
 
 h3 {
@@ -9,7 +9,7 @@ h3 {
 }
 
 .input-field {
-	background-color: pink;
+	background-color: #C3C6C7;
 	text-align: center;
 	margin: auto;
 	border-radius: 20px;
